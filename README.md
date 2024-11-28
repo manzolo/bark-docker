@@ -31,13 +31,17 @@ environment:
   OUTPUT_FILE: "output_audio.wav"
 ```
 
-* Note: Downloading Models
+## Start the Service
 
-When starting the service for the first time, the Bark model will automatically download required resources. This process may take some time, depending on your internet connection. Please be patient and monitor the logs for progress.
+After building the image, you can start the containers by running:
 
 ```bash
 docker compose down && docker compose rm -f && docker compose up -d && docker compose logs -f
 ```
+
+* Note: Downloading Models
+
+When starting the service for the first time, the Bark model will automatically download required resources. This process may take some time, depending on your internet connection. Please be patient and monitor the logs for progress.
 
 Once the service has completed the text-to-speech process, you should see the following message in the logs:
 
