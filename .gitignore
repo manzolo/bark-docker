@@ -1,0 +1,6 @@
+/output/*
+/cache/*
+
+!/output/.gitkeep
+!/cache/.gitkeep
+

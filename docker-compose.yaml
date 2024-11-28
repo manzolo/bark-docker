@@ -1,0 +1,13 @@
+services:
+  bark:
+    build: .
+    container_name: bark_container
+    volumes:
+      - ./cache:/root/.cache  # Mappa la directory cache del tuo host alla directory del container
+      - ./output:/output  # Mappa la directory cache del tuo host alla directory del container
+    environment:
+      OUTPUT_FILE: demo.wav
+      NVIDIA_VISIBLE_DEVICES: all
+      TEXT: "Ciao amico mio, anche se può sembrarti strano, questo è un testo parlato da un intelligenza artificiale, buon divertimento"
+    runtime: nvidia  # Usa la GPU se disponibile
+    
