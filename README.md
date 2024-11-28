@@ -42,5 +42,5 @@ docker compose down && docker compose rm -f && docker compose up -d && docker co
 Once the service has completed the text-to-speech process, you should see the following message in the logs:
 
 ```
-bark_container  | Done! Output audio file is saved at: '/output/demo.wav'
+bark_container  | Done! Output audio file is saved at: '/output/output_audio.wav'
 ```
